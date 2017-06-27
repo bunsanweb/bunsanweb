@@ -12,8 +12,8 @@ Anattaとは、
 
 Anattaでは現在、以下の要素が提案されている:
 
-- [Anatta Engine](../anatta-engine/)
-- [Hashnet](../hashnet/)
+- [Anatta Engine](https://github.com/anatta-project/anatta-engine/)
+- [Hashnet](https://github.com/anatta-project/hashnet/)
 - Dashboard/Inst
 
 「Anatta Engine」は、小さな非同期プログラムの集合を、
