@@ -16,7 +16,7 @@ Bunsanは現在、以下のリポジトリを公開する:
 - [Hashnet](https://github.com/anatta-project/hashnet/)
 - [grp](https://github.com/anatta-project/grp/)
 
-## anatta-engine
+### anatta-engine
 
 「Anatta Engine」は、小さな非同期プログラムの集合を、
 URIに基づいて構造化し、REST型メッセージングで
@@ -33,7 +33,7 @@ Engineによって具現化するものは、自分自身が中心にして自�
 [anatta-engine-potluck](https://github.com/anatta-project/anatta-engine-potluck/)
 は、anatta-engineを用いたアプリケーション例としてWebページへのコメント共有システムである。
 
-## hashnet
+### hashnet
 
 「Hashnet」は、非同期プログラミングのための「イベント」を、
 インターネット上の各々が分散的に発行でき、それらを各々で分散的に利用できる、
@@ -59,9 +59,9 @@ PUTされたすべての「イベント」に署名があり、署名を検証�
 ピア実装ではREPLが起動し、JavaScript関数呼び出しを通じてピアの機能を実行させるUIとなっている。
 イベント例としてブックマーク共有イベントと、及びそのElectronベースのGUIも含んでいる。
 
-## grp
+### grp
 
-grpは、小さなプログラムのための「汎用リバースプロクシ機構」のシステムである。
+grpは、小さなプログラムのための「汎用リバースプロクシ機構」システムのプロトタイプである。
 
 「汎用リバースプロクシ機構」は、Anatta Engineの、プログラムをURIでアクセスさせる構造について切り出し、
 それ単体で利用可能にしたものである。
