@@ -1,16 +1,14 @@
-# Bunsan Overview
+# Bunsan Web: the decentralized Web 
 
-## About Bunsan
+## About Bunsan Web
 
-Bunsanとは、
-各々が自由に情報をシェアできるプログラムを構築、実行可能な
-基盤(foundation)を、
-インターネット上にWebベースの技術を利用してdecentralizedに構築する
-システム群である。
+"Bunsan Web" is decentralized web that forms an open network of
+individual programs for freely sharing their information
+with a foundation derived on the browser-side standard technologies of the Web.
 
-## Sources of Bunsan
+## Sources of Bunsan Web
 
-Bunsanは現在、以下のリポジトリを公開する:
+Source code repositories of Bunsan Web:
 
 - [anatta-engine](https://github.com/anatta-project/anatta-engine/)
 - [Hashnet](https://github.com/anatta-project/hashnet/)
@@ -18,59 +16,77 @@ Bunsanは現在、以下のリポジトリを公開する:
 
 ### anatta-engine
 
-「Anatta Engine」は、小さな非同期プログラムの集合を、
-URIに基づいて構造化し、REST型メッセージングで
-相互連携させてシステムを構成できるプログラム実行環境である。
+The `anatta-engine` is a runtime environment for building systems on
+a set of tiny asynchronous programs with
+structuring based on URI and interacting via REST messaging.
 
-メッセージやプログラム状態を始めとする、プリミティブなデータ構造として、
-HTML DOMを使い、メタデータアクセス可能にするインタフェースを追加する。
-Engineによって具現化するものは、自分自身が中心にして自由に
-割り当てができるURI空間であり、
-データやプログラムから、ファイルやデータベースなどのローカルシステム、
-そしてユニバーサルなWebへとシームレスなハイパーリンクアクセスを可能にする。
+The HTML DOM is applied as a primitive data structure of programs for
+messages and their states.
+It also adds an interface for accessing with the metadada instead of 
+structured locators.
+The engine realizes a program centric URI-space freely allocated by itself.
+It enables seamless hyperlink accessing from their data and programs,
+via local systems such as files or storage, to the universal Web.
 
-このリポジトリには、nodejs上で稼働するランタイムとそのexamplesが含まれる。
-[anatta-engine-potluck](https://github.com/anatta-project/anatta-engine-potluck/)
-は、anatta-engineを用いたアプリケーション例としてWebページへのコメント共有システムである。
+This repository contains a runtime implementations on node.js and its examples.
+The 
+[anatta-engine-potluck](https://github.com/anatta-project/anatta-engine-potluck/) is an example application of the `anatta-engine` systems such as
+comment sharing system for each Web pages.
 
 ### hashnet
 
-「Hashnet」は、非同期プログラミングのための「イベント」を、
-インターネット上の各々が分散的に発行でき、それらを各々で分散的に利用できる、
-基盤になるネットワークを構成するために設計したシステムである。
+The `hashnet` is a system designed for building the foundation network
+that the "events" for asynchronous programs can be 
+decentralizedly published and consumed by everyone on the Internet.
 
-Hashnetにおける「イベント」とは、一般的なイベントシステムとは違い
-発行者単位での事前にsubscribeを行わない、ユニバーサルに通用する
-永続的なデータである。
-この「イベント」では、その内容が持つ意味を示す「Context」が含まれており、
-発行者から"Hashnetへ"「イベント」をPUTすると、
-利用したい「Context」を元に利用者が"Hashnetから"非同期でイベントをGETすることが
-可能となる、構造を提供するものである。
+The events on hashnet are different from ones of traditional event systems.
+They are universal persistent data with no subscription to 
+specific publishers or channels.
 
-インターネット上で、各々の「イベント」発行者は非公開鍵ペアを保有し、
-PUTされたすべての「イベント」に署名があり、署名を検証することで
-正当であるとして扱う。各々が正当なイベントの範囲としての自分自身を起点に、
-他者との間で正当なイベントとして扱う範囲を融合させていく分散システムを
-構成する。この分散システム自体もまたhashnetの「イベント」の上で構築した
-アプリケーションとなる構造である。
+These events contains the `contexts` that represents the means of 
+their contents.
+For programs, the `contexts` provides the structure of its contents.
+Publishers can `PUT` events with some `contexts` to the `hashnet`.
+Consumers can asynchronously `GET` the events 
+from the `hashnet` filtered with required `contexts` for their usage.
 
-このリポジトリには、この構造で実装したhashnetを構成するピアのプロトタイプ実装、及び、
-ピア間ネットワークにおけるイベントのシミュレーションでの統計用のコードとその結果データが含まれる。
-ピア実装ではREPLが起動し、JavaScript関数呼び出しを通じてピアの機能を実行させるUIとなっている。
-イベント例としてブックマーク共有イベントと、及びそのElectronベースのGUIも含んでいる。
+Each event publisher on the Internet has asymmetric key pairs
+and their identities are based on the public key.
+All events are `PUT` with sign by the keys, then 
+events verified its sign with publisher key are valid on anywhere
+for processing.
+
+On the `hashnet`, 
+everyone has the range of the valid events as its center is themselves.
+A decentralized network is formed with merging the valid ranges each other.
+The network peer itself is also an application system
+built on the events of the `hashnet`.
+
+This repository contains prototype implementation of a `hashnet` peer 
+structure, simulation codes for events on inter-peer network and 
+their result stats.
+The peer implementation spawns a REPL UI with core objects
+for calling methods to executing the peer functionalities.
+It also contains "bookmark-sharing" event example and 
+its GUI app on Electron.
 
 ### grp
 
-grpは、小さなプログラムのための「汎用リバースプロクシ機構」システムのプロトタイプである。
+The `grp` is a prototype implementation of the 
+"Generic Reverse Proxy infrastructre" for tiny programs.
 
-「汎用リバースプロクシ機構」は、Anatta Engineの、プログラムをURIでアクセスさせる構造について切り出し、
-それ単体で利用可能にしたものである。
-クラウドではなく、ブラウザページ上のスクリプトのレベルのプログラムからURIでアクセスを可能にする。
+"Generic Reverse Proxy infrastructre" is independently available 
+from the `anatta-engine` functionality of URI accessed programs.
 
-このリポジトリには、nodejsで稼動させるリバースプロクシサーバ部分と、
-WebSocketで通信しServiceWorkerの
-[fetchイベント型のクライアント](https://developer.mozilla.org/docs/Web/API/FetchEvent#Examples)
-インタフェースを提供するJavaScriptライブラリ、及びそのアプリケーション例を含む。
+It can access programs as a script on browser tab pages with URI.
+It makes needless to implement specific brokers for each application 
+structures on the cloud servers.
+
+This repository contains reverse-proxy server on node.js, 
+JavaScript library interface as the ServiceWorker's 
+["fetch" event style client](https://developer.mozilla.org/docs/Web/API/FetchEvent#Examples) that implemented with WebSocket,
+ant its examples.
+
 
 ## Architecture of Bunsan
 
