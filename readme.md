@@ -2,9 +2,9 @@
 
 ## About Bunsan Web
 
-"Bunsan Web" is decentralized web that forms an open network of
+"Bunsan Web" is a decentralized web that forms an open network of
 individual programs for freely sharing their information
-with a foundation derived on the browser-side standard technologies of the Web.
+with a foundation derived from browser-side standard technologies of the Web.
 
 ## Sources of Bunsan Web
 
@@ -22,10 +22,10 @@ structuring based on URI and interacting via REST messaging.
 
 The HTML DOM is applied as a primitive data structure of programs for
 messages and their states.
-It also adds an interface for accessing with the metadada instead of 
+It also adds an interface for accessing metadata instead of 
 structured locators.
 The engine realizes a program centric URI-space freely allocated by itself.
-It enables seamless hyperlink accessing from their data and programs,
+It enables seamless hyperlink accessing from data and programs,
 via local systems such as files or storage, to the universal Web.
 
 This repository contains a runtime implementations on node.js and its examples.
@@ -36,35 +36,35 @@ comment sharing system for each Web pages.
 ### hashnet
 
 The `hashnet` is a system designed for building the foundation network
-that the "events" for asynchronous programs can be 
-decentralizedly published and consumed by everyone on the Internet.
+where "events" for asynchronous programs can be published 
+in a decentralized manner and be consumed by everyone on the Internet.
 
-The events on hashnet are different from ones of traditional event systems.
+The events on hashnet are different from those of traditional event systems.
 They are universal persistent data with no subscription to 
 specific publishers or channels.
 
-These events contains the `contexts` that represents the means of 
+These events contains `contexts` that represents the means of 
 their contents.
-For programs, the `contexts` provides the structure of its contents.
-Publishers can `PUT` events with some `contexts` to the `hashnet`.
-Consumers can asynchronously `GET` the events 
+For programs, `contexts` provides the structure of its contents.
+Publishers can `PUT` events with some `contexts` onto the `hashnet`.
+Consumers can asynchronously `GET` events 
 from the `hashnet` filtered with required `contexts` for their usage.
 
 Each event publisher on the Internet has asymmetric key pairs
-and their identities are based on the public key.
+and their identities are based on public keys.
 All events are `PUT` with sign by the keys, then 
 events verified its sign with publisher key are valid on anywhere
 for processing.
 
 On the `hashnet`, 
-everyone has the range of the valid events as its center is themselves.
-A decentralized network is formed with merging the valid ranges each other.
+everyone has the range of the valid events as itself as the center.
+A decentralized network is formed by merging the valid ranges with each other.
 The network peer itself is also an application system
 built on the events of the `hashnet`.
 
-This repository contains prototype implementation of a `hashnet` peer 
+This repository contains a prototype implementation of a `hashnet` peer 
 structure, simulation codes for events on inter-peer network and 
-their result stats.
+their result states.
 The peer implementation spawns a REPL UI with core objects
 for calling methods to executing the peer functionalities.
 It also contains "bookmark-sharing" event example and 
@@ -75,8 +75,8 @@ its GUI app on Electron.
 The `grp` is a prototype implementation of the 
 "Generic Reverse Proxy infrastructre" for tiny programs.
 
-"Generic Reverse Proxy infrastructre" is independently available 
-from the `anatta-engine` functionality of URI accessed programs.
+"Generic Reverse Proxy infrastructre" is available independently
+of the `anatta-engine` functionality of URI accessed programs.
 
 It can access programs as a script on browser tab pages with URI.
 It makes needless to implement specific brokers for each application 
@@ -84,8 +84,8 @@ structures on the cloud servers.
 
 This repository contains reverse-proxy server on node.js, 
 JavaScript library interface as the ServiceWorker's 
-["fetch" event style client](https://developer.mozilla.org/docs/Web/API/FetchEvent#Examples) that implemented with WebSocket,
-ant its examples.
+["fetch" event style client](https://developer.mozilla.org/docs/Web/API/FetchEvent#Examples) implemented with WebSocket,
+and its examples.
 
 
 ## Architecture of Bunsan
