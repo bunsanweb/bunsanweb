@@ -16,6 +16,19 @@ Source code repositories of Bunsan Web:
 - [anatta-engine](https://github.com/anatta-project/anatta-engine/)
 - [grp](https://github.com/anatta-project/grp/)
 
+At first, technologies of "programming for the Web" concept is 
+made as a single integrated package on node.js: `anatta-engine`.
+We decompose it as each feature on direct browser-side standard technologies
+to be available for a paradigm of any end-to-end style computing on the Web, 
+not only for `hashnet` requirements. 
+The `grp` is the first decomposed feature from `anatta-engine`. 
+
+See more detail at: 
+[features-from-anatta-engine.md](features-from-anatta-engine.md).
+
+
+see: [.md](updating.md)
+
 ### hashnet
 
 The `hashnet` is a system designed for building the foundation network
