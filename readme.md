@@ -6,32 +6,15 @@
 individual programs for freely sharing their information
 with a foundation derived on the browser-side standard technologies of the Web.
 
+
+
 ## Sources of Bunsan Web
 
 Source code repositories of Bunsan Web:
 
+- [hashnet](https://github.com/anatta-project/hashnet/)
 - [anatta-engine](https://github.com/anatta-project/anatta-engine/)
-- [Hashnet](https://github.com/anatta-project/hashnet/)
 - [grp](https://github.com/anatta-project/grp/)
-
-### anatta-engine
-
-The `anatta-engine` is a runtime environment for building systems on
-a set of tiny asynchronous programs with
-structuring based on URI and interacting via REST messaging.
-
-The HTML DOM is applied as a primitive data structure of programs for
-messages and their states.
-It also adds an interface for accessing with the metadada instead of 
-structured locators.
-The engine realizes a program centric URI-space freely allocated by itself.
-It enables seamless hyperlink accessing from their data and programs,
-via local systems such as files or storage, to the universal Web.
-
-This repository contains a runtime implementations on node.js and its examples.
-The 
-[anatta-engine-potluck](https://github.com/anatta-project/anatta-engine-potluck/) is an example application of the `anatta-engine` systems such as
-comment sharing system for each Web pages.
 
 ### hashnet
 
@@ -69,6 +52,25 @@ The peer implementation spawns a REPL UI with core objects
 for calling methods to executing the peer functionalities.
 It also contains "bookmark-sharing" event example and 
 its GUI app on Electron.
+
+### anatta-engine
+
+The `anatta-engine` is a runtime environment for building systems on
+a set of tiny asynchronous programs with
+structuring based on URI and interacting via REST messaging.
+
+The HTML DOM is applied as a primitive data structure of programs for
+messages and their states.
+It also adds an interface for accessing with the metadada instead of 
+structured locators.
+The engine realizes a program centric URI-space freely allocated by itself.
+It enables seamless hyperlink accessing from their data and programs,
+via local systems such as files or storage, to the universal Web.
+
+This repository contains a runtime implementations on node.js and its examples.
+The 
+[anatta-engine-potluck](https://github.com/anatta-project/anatta-engine-potluck/) is an example application of the `anatta-engine` systems such as
+comment sharing system for each Web pages.
 
 ### grp
 
