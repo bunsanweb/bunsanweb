@@ -26,9 +26,6 @@ The `grp` is the first decomposed feature from `anatta-engine`.
 See more detail at: 
 [features-from-anatta-engine.md](features-from-anatta-engine.md).
 
-
-see: [.md](updating.md)
-
 ### hashnet
 
 The `hashnet` is a system designed for building the foundation network
