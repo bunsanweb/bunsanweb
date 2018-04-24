@@ -2,23 +2,23 @@
 
 The `anatta-engine` is implemented as all-in-one runtime package 
 for running application systems with node.js.
-It can run scripts embeded in HTML,  
+It can run scripts embedded in HTML,  
 then these scripts affect `window`/`document` objects as their states,
 even if they perform as Web servers.
-The platform functionalites are implemented on backyard.
+The platform functionalities are implemented on backyard.
 Some are accessible via asynchronous URI access, 
 others are added as extra functions into `window` object 
 (e.g. Elliptic-Curve cryptography).
 
 We believe the real loosely-coupled network systems come from
-URI-based asynchronus browser-side style of programming, 
+URI-based asynchronous browser-side style of programming, 
 not from layer-stacked synchronous server-side style.
 Therefore, the `anatta-engine` is designed as 
 Web Browser-side style programming anywhere
 for all element in systems not limited only scripts in browsers.
 Its implementation is based on the browser-side standards structures
 (HTML DOM, CSS query, DOM Events, and 
-some stardard on these days e.g. `XMLSerializer`).
+some standard on these days e.g. `XMLSerializer`).
 
 ## Why decompose each feature of `anatta-engine` package
 
@@ -36,22 +36,22 @@ to enhance their directions.
 Contributing decentralized side with applying these technologies,
 it also becomes closer to the world towards the "Bunsan Web".
 
-Now, browesers are much enhanced with standardized technologies.
+Now, browsers are much enhanced with standardized technologies.
 However, these standard technologies were used both centralize or 
 decentralize directions.
 But the standard browser technologies are also enough 
 to implement the features of `anatta-engine`.
 
-We would implement each feature on the stahdard browser technologies directory.
-They could independetly be available on various browser scripts, 
+We would implement each feature on the standard browser technologies directory.
+They could independently be available on various browser scripts, 
 not only for the "Bunsan Web".
-Using these technoligies  approaches to the "Bunsan Web".
+Using these technologies  approaches to the "Bunsan Web".
 
 ## How to use standard technologies
 
 It is important how to use standard technologies.
 If hiding them completely on backyard, it is just one of messy products.
-The stahdard stuructures should be in front as much,
+The standard structures should be in front as much,
 and implementation structures should also be hide as mush. 
 
 In current standards, there are general useful structures such as
@@ -59,11 +59,11 @@ In current standards, there are general useful structures such as
 Features are provides as some of these generic objects
 injected implementations inside.
 
-One of profits prooviding interface as stardard object is
+One of profits providing interface as stardard object is
 easily mixable to unknown/yet-unborn technologies.
-The openess is important to build the decentralized world.
+The openness is important to build the decentralized world.
 
-## "Generic Reverse Proxy" as a first decemposition
+## "Generic Reverse Proxy" as a first decomposition
 
 Programs on `anatta-engine` has ability of publishing their information 
 as Web server style request/response. 
@@ -83,19 +83,19 @@ request/response messages in the proxy server.
 The browser scripts listen the access `Event` for 
 processing each `Request` message to make a `Response` message to respond.
 
-For providing the interface as starndard objects,
+For providing the interface as standard objects,
 The `ServiceWorker`'s `"fetch"` event structure is directly applied to 
 the `grp` browser-side API. 
 It can handle `"fetch"` access with`FetchEvent.respondWith(response)` 
-with objects in the starndard `fetch()` API: `Request`, `Response`.
+with objects in the standard `fetch()` API: `Request`, `Response`.
 
 The implementation uses `WebSocket` to connect the proxy
 because the `WebSocket` can connect any machines not limited to CORS origins.
-Proxy server is implemented simpliy as node.js HTTP server.
+Proxy server is implemented simply as node.js HTTP server.
 
 Unique identity of programs is based on 
 EC(Elliptic Curve) cryptography public keys from random private keys.
-The 3rd pirty ECC library is used inside implementation because of 
+The 3rd party ECC library is used inside implementation because of 
 lack feature of WebCrypto standard (retrieve keys from only random bytes).
 
 The `grp` is the first trial prototype to implement with the manner
