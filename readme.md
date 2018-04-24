@@ -45,9 +45,8 @@ from the `hashnet` filtered with required `contexts` for their usage.
 
 Each event publisher on the Internet has asymmetric key pairs
 and their identities are based on the public key.
-All events are `PUT` with sign by the keys, then 
-events verified its sign with publisher key are valid on anywhere
-for processing.
+All events are signed by their key when they are `PUT` onto `hashnet` 
+therefore events are considered valid based on this signature.
 
 On the `hashnet`, 
 everyone has the range of the valid events as its center is themselves.
