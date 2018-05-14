@@ -1,61 +1,82 @@
 # Architecture of Bunsan
 
-本来Webは、サーバの境界を超えてドキュメント間に自由にリンクを張るものであり、
-一方ブラウザからはそれらを各人が自由なルートで利用できる、
-実質的に単一のドキュメントネットワークを構成している。
+Essentially the Web forms single document network on that
+documents can be linked over their server boundaries,
+and everyone can freely use them via any route with browsers.
 
-Bunsanでは、プログラムに対して、
-Webのような、単一のネットワークのうえで
-提供者と利用者の双方で自由につながる関係を可能とするための
-根幹のアーキテクチャを選択したものである。
+Bunsan put a different programming architecture on its fundamental.
+With the architecture, 
+both providers and users of programs can 
+make relationships freely connectable 
+on a universal network such as the Web.
 
-Bunsanにおける「プログラム」とは、
-URIを通じて非同期に他の「プログラム」へとアクセスできる存在である。
-この「プログラム」のために、あるURIでアクセスした「プログラム」から受け取った
-「ドキュメント」の中にあるハイパーリンクのURIを通じて、
-別のプログラムを次々と呼び出すことで相互作用しあうための仕組みが必要である。
-Bunsanでは、サーバ側ではなく、ブラウザにおけるWeb技術にもとづいて、
-その発展技術となるように、この仕組みを達成する技術を提供する。
+"Program" on Bunsan is defined as an entity which can asynchronously 
+access to other "program"s with their URIs.
+For realizing these "program"s, it is required a mechanism for
+interacting with repeatedly callings other programs
+through hyperlinked URIs in "documents" 
+that also passed by the programs accessed with such URIs.
+On Bunsan, to achieve the mechanism, 
+its technologies are designed as extended of
+the browser side standard Web technologies,
+not server-side ones.
 
-そして、これらの「プログラム」の非同期実行のエントリーポイントのために、
-Bunsanではユニバーサルな「イベント」のネットワークhashnetを提唱する。
-hashnetは、イベント発行者やイベントキューのような特定の対象に制約されずに、
-単一の"hashnet"に対してイベントをPub Subするモデルを採る。
+For asynchronous entry points of driving these "program"s,
+Bunsan offers the "hashnet"; network of universal events.
+On the "hashnet", event consumers are not restricted by 
+specific targets as event publishers or event queues.
+A model of the "hashnet" is only publishing and subscribing to 
+the single target; "hashnet".
 
-ここでの「プログラム」は、"hashnetに対して"「イベント」をPUTし、
-"hashnetから"「イベント」をGETするアーキテクチャとなるものである。
-「イベント」をGETする側では、その「イベント」の内容にもとづいて、
-非同期で処理を行うことから、
-イベントをPUTする「プログラム」とイベントをGETする「プログラム」の間は、
-「イベント」の内容を表明する情報「context」に対して、シェアしあう関係となる。
+Here, these "program"s work on the architecture such as
+PUT-ting "event"s to the "hashnet" and GET-ting "event"s from the "hashnet".
+Because one that has GET "event"s processes them depend on these contents,
+the relationship between "program"s PUT "event"s and "program"s GET "event"s
+is sharing based on the information; 
+"contexts" that state what content of the "event".
 
-このhashnetは、インターネット上で、それぞれに「イベント」キューを
-もった「ピア」の分散的な連携によって実現する。
-まず、ピア単体のみでの単一「イベント」キューとして、hashnetはそのピア局所的で成立する。
-その上で、ピア間で連携するための各種の情報を入れたhashnet上の「イベント」を
-発行し解釈するhashnet上のシステムとして、
-ピア間での分散連携も実現する構成となっている。
-たとえばネットワーク上のピアが新たなピアを追加したとき、
-そのピア追加をイベントとしてhashnetでシェアすることで、
-ネットワーク上のピアはそれぞれその新ピアに対しての適切な扱いをすることで
-ネットワークシステムとして機能する。
-同様の手法で、hashnet上のシステムとして、パッケージ配布システムなどでも、
-hashnet上の分散システムとして自己拡張していくことができる。
+This "hashnet" is realized with cooperated dispersed "peer"s.
+Each peer has a self "event" queue.
+At first, the "hashnet" locally established 
+as a single "event" queue of a standalone peer itself.
+Any interactions between dispersed peers 
+are realized as application systems on the "hashnet" such that 
+use "events" on the "hashnet" 
+which include required information for these interactions.
 
-この「イベント」は非対称鍵により署名検証され、
-検証の公開鍵は「イベント」発行者のアイデンティティと一対一対応するため、
-「イベント」の内容は発行者によるものとして信頼する、ことになる。
-その「イベント」の内容として埋め込まれたURIもその発行者による保証されたものであり、
-「イベント」の内容とURIの先にある情報とを突き合わせによって、
-URIの先への信頼を機械的に表明できるものとなる。
-たとえば、イベントシーケンスは、「前のイベント」のURIを含むイベント内容によって、その順序は保証されることになる。
-イベント署名者の間を横断するリンク関係を考えると、
-これは個々のイベント発行者を起点とした、URIへの信頼の連鎖の仕組みを提供するものである。
-「新しいピアをネットワークに追加する」といった、
-hashnetにおけるピアの連携とは、この信頼の連鎖を広げていくことで成立させるものとなる。
+Forming a network between peers 
+is also the same type of a system based on "event"s of the "hashnet".
+For example, when a new peer is added to the network by a existing peer, 
+the existing peer shares information of the new peer addition 
+as an event to "hashnet".
+Appropriately processed "following" the new peer by each peer on the network, 
+the network also goes well as the universal event queue with new added peers.
+As same manner, the "hashnet" is self extensible as dispersed systems,
+e.g. a package distribution system,
+with introducing new content properties of "event"s and
+these processing programs on each peer.
 
 
+The "event"s are signed and verified with the asymmetric key.
+Because the public key for the verification is correspond with 
+the identity of the publisher of the "event",
+The contents of "event" are trusted as published by the publisher itself.
+The linked URIs embedded in contents of the "events" are also trusted.
+To check information from the linked URIs in the "event" 
+with the values in the same "event",
+trust to the URI target can be automatically manifested with the "event".
+For example, order of event sequence would be guaranteed by 
+"the former events" URIs in each "event".
 
-
+With link relationships over signers of these events,
+it provides a chain of trust to URIs started from each event publisher.
+Peer interactions over the "hashnet" 
+such as "adding a new peer to the network" 
+consist on the expanded chains of trust. 
+Bunsan provides chains of trust on the "hashnet"
+just as sharing embedded links in signed "event"s.
+The systems on the "hashnet" is also processing on the trust chains
+as judgments of any relationship in dispersed Resources,
+including programs, events, data sets, and peers.
 
 
