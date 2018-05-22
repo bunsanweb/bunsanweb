@@ -2,7 +2,7 @@
 
 ## About Bunsan Web
 
-"Bunsan Web" is s decentralized web that forms an open network of
+"Bunsan Web" is a decentralized web that forms an open network of
 individual programs that freely sharing their information
 with a foundation built on standard browser-side technologies of the Web.
 
@@ -32,31 +32,31 @@ The `hashnet` is a system designed for building the foundation network
 where "events" for asynchronous programs can be  published and consumed 
 by everyone on the Internet in a decentralized manner.
 
-Events on hashnet are different from ones of traditional event systems.
+Events on hashnet are different from those of traditional event systems.
 They are universal persistent data with no subscription to 
 specific publishers or channels.
 
 These events contains `contexts` that represents the means of 
 their contents.
 For programs, the `contexts` provides the structure of its contents.
-Publishers can `PUT` events with some `contexts` to the `hashnet`.
+Publishers can `PUT` events with some `contexts` onto the `hashnet`.
 Consumers can asynchronously `GET` events 
 from the `hashnet` filtered with required `contexts` for their usage.
 
 Each event publisher on the Internet has asymmetric key pairs
-and their identities are based on the public key.
+and their identities are based on their public keys.
 All events are signed by their key when they are `PUT` onto `hashnet` 
 therefore events are considered valid based on this signature.
 
 On the `hashnet`, 
-everyone has the range of the valid events as its center is themselves.
-A decentralized network is formed by merging the valid ranges each other.
+everyone has the range of the valid events as itself as center.
+A decentralized network is formed by merging the valid ranges with each other.
 The network peer itself is also an application system
 built on the events on the `hashnet`.
 
 This repository contains prototype implementation of a `hashnet` peer 
 structure, simulation codes for events on inter-peer network and 
-their result stats.
+their result statatistics.
 The peer implementation spawns a REPL UI with core objects
 for calling methods to execute peer functionalities.
 It also contains a "bookmark-sharing" event example and 
@@ -95,7 +95,7 @@ structures on the cloud servers.
 
 This repository contains a reverse-proxy server on node.js, 
 JavaScript library interface as the ServiceWorker's 
-["fetch" event style client](https://developer.mozilla.org/docs/Web/API/FetchEvent#Examples) that implemented with WebSocket,
+["fetch" event style client](https://developer.mozilla.org/docs/Web/API/FetchEvent#Examples) implemented with WebSocket,
 and its examples.
 
 
