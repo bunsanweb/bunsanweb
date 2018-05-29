@@ -50,7 +50,8 @@ Using these technologies  approaches to the "Bunsan Web".
 ## How to use standard technologies
 
 It is important how to use standard technologies.
-If hiding them completely on backyard, it is just one of messy products.
+If a product would completely hide them on its backyard, 
+they are just messy one.
 The standard structures should be in front as much,
 and implementation structures should also be hide as mush. 
 
