@@ -11,7 +11,7 @@ on a universal network such as the Web.
 
 A **program** on Bunsan is defined as an entity which can asynchronously 
 access other **program**s with their URIs.
-To realizing these **program**s, one requirement is a mechanism for
+To realize these **program**s, one requirement is a mechanism for
 interacting with repeated calls with other programs
 through hyperlinked URIs in **document**s 
 that are also passed by the programs accessed with such URIs.
@@ -20,7 +20,7 @@ its technologies are designed as an extension of
  standard browser-side Web technologies,
 not server-side ones.
 
-For asynchronous entry points that driving these **program**s,
+For asynchronous entry points that drive these **program**s,
 Bunsan offers the **hashnet**; a network of universal events.
 On the **hashnet**, event consumers are not restricted by 
 specific targets such as event publishers or event queues.
