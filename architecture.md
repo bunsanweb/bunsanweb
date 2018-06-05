@@ -4,7 +4,8 @@ The Web essentially forms a single document network in that
 documents can be linked over their server boundaries,
 and everyone can use them freely via any route with their browsers.
 
-Bunsan puts a different programming architecture over this fundamental concept.
+Bunsan takes into account the unique aspects of these fundamental concepts 
+with its programming architecture.
 With Bunsan, both providers and users of programs can 
 make freely connectable relationships
 on a universal network such as the Web.
