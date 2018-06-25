@@ -47,7 +47,7 @@ not only for the "Bunsan Web".
 
 ## How to use standard technologies
 
-It is important to use standard technologies.
+It is important how standard technologies are used.
 If a product would completely hide them on the backend, 
 the product becomes an opaque mess.
 The standard structures should be in front as much as possible,
@@ -55,8 +55,7 @@ and implementation structures should also be hidden as much as possible.
 
 In current standards, there are general useful structures such as
 `EventTarget`, `Streams`, `Blob`, `Proxy`, `Request`,`Response`, etc.
-Features are provided with some of these generic object implementations
-injected inside.
+Generic objects are provided as is with features injected inside as requested.
 
 One of the benefits of providing an interface using stardard objects is
 the ability to easily mix unknown/yet-unborn technologies with existing technologies.
