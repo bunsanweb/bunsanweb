@@ -1,16 +1,15 @@
 # Bunsan Web: the decentralized Web 
 
-## About Bunsan Web
+## About bunsanweb
 
-"Bunsan Web" is a decentralized web that forms an open network of
-individual programs that freely sharing their information
-with a foundation built on standard browser-side technologies of the Web.
+bunsanweb is a decentralized web born in Tokyo which forms an open network of
+individual programs that freely share information between them.
+Its foundation is built on standard browser-side web technologies.
 
 
+## Resources
 
-## Bunsan Web Resources
-
-Source code repositories of Bunsan Web:
+Source code repositories of bunsanweb:
 
 - [hashnet](https://github.com/anatta-project/hashnet/)
 - [anatta-engine](https://github.com/anatta-project/anatta-engine/)
