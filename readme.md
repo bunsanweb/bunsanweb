@@ -11,9 +11,9 @@ Its foundation is built on standard browser-side web technologies.
 
 Source code repositories of bunsanweb:
 
-- [hashnet](https://github.com/anatta-project/hashnet/)
-- [anatta-engine](https://github.com/anatta-project/anatta-engine/)
-- [grp](https://github.com/anatta-project/grp/)
+- [hashnet](https://github.com/bunsanweb/hashnet/)
+- [anatta-engine](https://github.com/bunsanweb/anatta-engine/)
+- [grp](https://github.com/bunsanweb/grp/)
 
 At first, technologies of "programming for the Web" concept is 
 made as a single integrated package on node.js: `anatta-engine`.
@@ -77,7 +77,7 @@ via local systems such as files or storage, to the universal Web.
 
 This repository contains a runtime implementations on node.js and its examples.
 The 
-[anatta-engine-potluck](https://github.com/anatta-project/anatta-engine-potluck/) is an example application of an `anatta-engine` systems which
+[anatta-engine-potluck](https://github.com/bunsanweb/anatta-engine-potluck/) is an example application of an `anatta-engine` systems which
 provides a comment sharing system for webpages.
 
 ### grp
