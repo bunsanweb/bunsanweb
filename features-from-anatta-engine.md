@@ -24,7 +24,7 @@ some standard on these days e.g. `XMLSerializer`).
 
 Each individual concept of the `anatta-engine` is useful for the 
 decentralization of the Web, not just as a complete package.
-The "Bunsan Web" is 
+The "bunsanweb" is 
 made by combining a number of decentralization technologies.
 
 In the current Web world, there are two directions in conflict.
@@ -33,7 +33,7 @@ Both are populated by technologies
 to enhance their directions.
 
 By contributing these decentralized technologies,
-we hope the world moves towards the "Bunsan Web".
+we hope the world moves towards the "bunsanweb".
 
 Now, browsers are much enhanced with standardized technologies.
 However, these standard technologies were used to both centralize and 
@@ -43,7 +43,7 @@ to implement the features of `anatta-engine`.
 
 We would implement each feature on the standard browser technologies directory.
 They could independently be available on various browser scripts, 
-not only for the "Bunsan Web".
+not only for the "bunsanweb".
 
 ## How to use standard technologies
 

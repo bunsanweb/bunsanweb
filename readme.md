@@ -1,4 +1,4 @@
-# Bunsan Web: the decentralized Web 
+# bunsanweb: the decentralized Web 
 
 ## About bunsanweb
 
@@ -98,15 +98,15 @@ JavaScript library interface as the ServiceWorker's
 and its examples.
 
 
-## Architecture of Bunsan
+## Architecture of bunsanweb
 
 See: [architecture.md](architecture.md)
 
-## Mission of Bunsan
+## Mission of bunsanweb
 
 See: [mission.md](mission.md)
 
-## A History of Bunsan
+## A History of bunsanweb
 
 See: [history.md](history.md)
 

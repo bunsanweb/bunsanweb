@@ -1,28 +1,28 @@
-# Architecture of Bunsan
+# Architecture of bunsanweb
 
 The Web essentially forms a single document network in that
 documents can be linked over their server boundaries,
 and everyone can use them freely via any route with their browsers.
 
-Bunsan takes into account the unique aspects of these fundamental concepts 
+The "bunsanweb" takes into account the unique aspects of these fundamental concepts 
 with its programming architecture.
-With Bunsan, both providers and users of programs can 
+With bunsanweb, both providers and users of programs can 
 make freely connectable relationships
 on a universal network such as the Web.
 
-A **program** on Bunsan is defined as an entity which can asynchronously 
+A **program** on bunsanweb is defined as an entity which can asynchronously 
 access other **program**s with their URIs.
 To realize these **program**s, one requirement is a mechanism for
 interacting with repeated calls with other programs
 through hyperlinked URIs in **document**s 
 that are also passed by the programs accessed with such URIs.
-On Bunsan, to achieve such a mechanism, 
+On bunsanweb, to achieve such a mechanism, 
 its technologies are designed as an extension of
  standard browser-side Web technologies,
 not server-side ones.
 
 For asynchronous entry points that drive these **program**s,
-Bunsan offers the **hashnet**; a network of universal events.
+bunsanweb offers the **hashnet**; a network of universal events.
 On the **hashnet**, event consumers are not restricted by 
 specific targets such as event publishers or event queues.
 A model of the **hashnet** is only publishing and subscribing to 
@@ -73,7 +73,7 @@ it provides a chain of trust to URIs started from each event publisher.
 Peer interactions over the **hashnet** 
 such as "adding a new peer to the network" 
 consists of expanding chains of trust. 
-Bunsan provides chains of trust on the **hashnet**,
+Bunsanweb provides chains of trust on the **hashnet**,
 just by sharing embedded links in signed **event**s.
 Processing on the chains of trust,
 the systems on the **hashnet** can judge any relationship 
