@@ -6,7 +6,7 @@ bunsanweb is a decentralized web born in Tokyo which forms an open network of
 individual programs that freely share information between them.
 Its foundation is built on standard browser-side web technologies.
 
-## Special: attend to Decentralized Web Summit 2018
+## Special: Decentralized Web Summit 2018
 
 We'd attend to the
 [Decentralized Web Summit 2018](https://decentralizedweb.net/sciencee-fair).
