@@ -11,9 +11,9 @@ Its foundation is built on standard browser-side web technologies.
 We'd attend to the
 [Decentralized Web Summit 2018](https://decentralizedweb.net/sciencee-fair).
 
-We’re working hard to prepare explanatory material about bunsanwe. 
-But we’d love for you to check out what we’ve created and leave any questions or comments you have. 
-We’d be happy to answer any questions[here](issues/2).
+We're working hard to prepare explanatory material about bunsanweb.
+But we'd love for you to check out what we’ve created and leave any questions or comments you have.
+We'd be happy to answer any questions on the [issue comments](../../issues/2).
 
 ## Resources
 
