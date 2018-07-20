@@ -5,10 +5,12 @@
 bunsanweb is a decentralized web born in Tokyo which forms an open network of
 individual programs that freely share information between them.
 Its foundation is built on standard browser-side web technologies.
+After years of private development we're finally ready to show the world what we've created.
+We hope that you can help bunsanweb take a major step in its development.
 
 ## Special: Decentralized Web Summit 2018
 
-We'd attend to the
+We'd attending the
 [Decentralized Web Summit 2018](https://decentralizedweb.net/sciencee-fair).
 
 We're working hard to prepare explanatory material about bunsanweb.
@@ -105,6 +107,9 @@ JavaScript library interface as the ServiceWorker's
 ["fetch" event style client](https://developer.mozilla.org/docs/Web/API/FetchEvent#Examples) implemented with WebSocket,
 and its examples.
 
+## Contact us
+
+We want to hear from you about bunsanweb. We have an open thread in Issues which we are actively monitoring where you can leave your questions and comments.We look forward to hearing from you!
 
 ## Architecture of bunsanweb
 
