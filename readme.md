@@ -8,7 +8,7 @@ Its foundation is built on standard browser-side web technologies.
 After years of private development we're finally ready to show the world what we've created.
 We hope that you can help bunsanweb take a major step in its development.
 
-## Special: Decentralized Web Summit 2018
+### Special: Decentralized Web Summit 2018
 
 We'd attending the
 [Decentralized Web Summit 2018](https://decentralizedweb.net/sciencee-fair).
