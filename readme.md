@@ -109,7 +109,7 @@ and its examples.
 
 ## Contact us
 
-We want to hear from you about bunsanweb. We have an open thread in Issues which we are actively monitoring where you can leave your questions and comments.We look forward to hearing from you!
+We want to hear from you about bunsanweb. We have an open thread in Issues which we are actively monitoring where you can leave [your questions and comments](../../issues/2)..We look forward to hearing from you!
 
 ## Architecture of bunsanweb
 
