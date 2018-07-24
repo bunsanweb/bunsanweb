@@ -11,7 +11,7 @@ We hope that you can help bunsanweb take a major step in its development.
 ### Special: Decentralized Web Summit 2018
 
 We'd attending the
-[Decentralized Web Summit 2018](https://decentralizedweb.net/sciencee-fair).
+[Decentralized Web Summit 2018](https://decentralizedweb.net/science-fair).
 
 We're working hard to prepare explanatory material about bunsanweb.
 But we'd love for you to check out what we’ve created and leave any questions or comments you have.
