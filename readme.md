@@ -15,7 +15,7 @@ We'd attending the
 
 We're working hard to prepare explanatory material about bunsanweb.
 But we'd love for you to check out what we’ve created and leave any questions or comments you have.
-We'd be happy to answer any questions on the [issue comments](../../issues/2).
+We'd be happy to answer any questions on the [issue comments](../../issues/1).
 
 ## Resources
 
@@ -109,7 +109,7 @@ and its examples.
 
 ## Contact us
 
-We want to hear from you about bunsanweb. We have an open thread in Issues which we are actively monitoring where you can leave [your questions and comments](../../issues/2)..We look forward to hearing from you!
+We want to hear from you about bunsanweb. We have an open thread in Issues which we are actively monitoring where you can leave [your questions and comments](../../issues/1)..We look forward to hearing from you!
 
 ## Architecture of bunsanweb
 
